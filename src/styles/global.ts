@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: Heebo;
     font-weight: 400;
+    color: #21243D;
   }
 `;
 
