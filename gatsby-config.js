@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "portolio-ui",
+    title: "Figma Portfolio UI",
+    titleTemplate: "%s · Designing and coding",
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    url: "https://www.doe.com", // No trailing slash allowed!
+    author: "@mobprogramming",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

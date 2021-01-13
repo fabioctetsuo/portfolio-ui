@@ -5,6 +5,7 @@ import * as Styled from "./styled";
 interface Props {}
 
 const routes = [
+  { to: "/", children: "Home" },
   { to: "/works", children: "Works" },
   { to: "/blog", children: "Blog" },
   { to: "/contact", children: "Contact" },
