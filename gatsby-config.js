@@ -26,5 +26,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Heebo:400,500,700"],
+        },
+      },
+    },
   ],
 };
