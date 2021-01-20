@@ -1,7 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Image, { FluidObject, GatsbyImageProps } from "gatsby-image";
 import Layout from "../components/Layout";
+import RecentPosts from "../containers/home/RecentPosts";
+import FeaturedWorks from "../containers/home/FeaturedWorks";
 import SEO from "../components/seo";
 import { Container, Row, Col, config } from "react-awesome-styled-grid";
 import styled from "styled-components";
@@ -61,9 +63,7 @@ const CustomCol = styled(Col)`
   `}
 `;
 
-// markup
 const IndexPage = ({ data }: Props) => {
-  // console.log({ data });
   return (
     <Layout>
       <SEO title="Homepage" />
@@ -87,6 +87,18 @@ const IndexPage = ({ data }: Props) => {
             </CustomCol>
           </Row>
         </Container>
+        <section
+          style={{
+            background: "#EDF7FA",
+            padding: "8px 0 32px",
+            marginTop: 72,
+          }}
+        >
+          <RecentPosts />
+        </section>
+        <section>
+          <FeaturedWorks />
+        </section>
       </main>
     </Layout>
   );

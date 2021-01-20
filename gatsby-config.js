@@ -32,10 +32,26 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./posts",
+      },
+      __key: "posts",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "works",
+        path: "./works",
+      },
+      __key: "works",
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Heebo:400,500,700"],
+          families: ["Heebo:400,500,700,900"],
         },
       },
     },
